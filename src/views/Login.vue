@@ -15,7 +15,9 @@ export default class Login extends Vue{
   private name: string = ''
   private doLogin() {
     userApi.logIn().then((res: any) => {
-      console.log(res)
+      console.log(res.data.data)
+      this.$store.dispatch('saveUser', res.data.data)
+      this.$router.push({name: 'Home'})
     })
   }
 }

@@ -12,7 +12,7 @@ export default class Header extends Vue{
 <style lang="less" scoped>
 .main{
   .header{
-    height: 100px;
+    height: 80px;
   }
 }
 </style>
